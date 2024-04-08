@@ -59,3 +59,17 @@
 
   - `mcr.microsoft.com/azure-sql-edge`：指定用于容器的镜像。
 
+# md笔记上传到github时遇到的问题
+
+1.图片无法显示问题
+
+- ​	原因：md文件上传到github了但是图片没有上传到github
+- ​        解决办法：新建一个.assets文件，把图片都复制进去
+
+2.上传图片时git push origin main遭到了拒绝![image-20240408191456172](assets/image-20240408191456172.png)
+
+- ​	原因：username并非github的用户名，而是邮箱。password并非登录密码而是一个可生成的个人token
+- ​        解决办法：
+  - 查看自己github的关联邮箱方法：右上角个人图标 -> settings -> email（在右边一栏）。
+  - 创建token方法：右上角个人图标 -> settings -> developer settings（在右边一栏）-> create new tokens会提示完成一些对于生成token的设置，比如有效期，可以用来干嘛的权限，设置一下就好。
+
